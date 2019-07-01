@@ -18,6 +18,12 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+  constructor(props){
+    super(props);
+    this.state = {'zip': ''};
+  }
+
   render() {
     return (
       <View style={styles.container}>
